@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Have Fun</title>
+        <link href='style.css' rel='stylesheet'>
+        <link rel="stylesheet" href="first/bootstrap.min.css">
+      <script src="first/jquery.min.js"></script>
+      <script src="first/bootstrap.min.js"></script>
+    </head>
+    <style>
+ body {
+    background-image: url("picture/pp.png");
+    background-size: cover;	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 1400px 700px;	
+	color: blue;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.box{
+	width:500px;
+	padding: 20px;
+	position: absolute;
+	top: 69%;
+	left: 38%;
+	transform: translate(-50%,-50%);
+	background: #7CFC00;
+	text-align: center;
+}
+.box h1{
+	color: #8FBc8F;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+.box input[type = "text"],.box input[type = "password"]{
+	border:0;
+	background:none;
+	display:block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 12px;
+	width:200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	font-size: 24px;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+	width:280px;
+	border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+	border:2px;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: #7FFFD4;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+
+}
+.box input[type = "submit"]:hover{
+    background:coral;
+    font-size: 200%;
+
+}
+h1{
+    color:salmon;
+    font-size: 32px;
+}
+    </style>
+    <body>  
+        <form class="box" action="process.php" method="post">
+            <h1> PLEASE KO LOGIN, SALAMAT! </h1>
+                <input type="text" name="" placeholder="Username" id="usern">
+                <input type="password" name="" placeholder="Password" id="passw">
+            <a href="next.html"><input type="submit" name="" value="Login"></a>
+         
+          <!-- Trigger the modal with a button -->
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Register Here</button>
+          
+            </form>
+            <div class="container">
+              <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Registration Form</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="pwd">Name:</label>
+                    <input type="text" class="form-control" id="name`">
+                    <label for="pwd">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                    <label for="pwd">Password:</label>
+                    <input type="Password" class="form-control" id="password">		
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+                </div>
+                </div> 
+                </div>
+                </div>
+            
+    </body>
+</html>
